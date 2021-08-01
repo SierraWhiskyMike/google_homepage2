@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta UTF-8>
+    <title> Google Homepage </title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet"> 
+    <style>
+        #top-bar {display:grid; grid-template-columns: 1fr 1fr 5fr 1fr 1fr 1fr; grid-column-gap: 2px; grid-template-rows: 10px; font-size:small; font-family: "Noto Sans JP", monospace; align-content: center; justify-content:center;}
+        #sign-in{background-color:#1a73e8; color: antiquewhite; border-radius: 6px; border-radius: 10; padding:5px 7px 5px 7px;}
+        #googlelogo {max-height: 60px; width: auto; display: block; margin-top:100px; margin-left: auto; margin-right: auto;}
+        #searcharea {width:fit-content; display: relative; margin-left: auto; padding-top: 50px; padding-bottom:10%;}
+        a{text-decoration:none; color:black;}
+        a:hover{color:cadetblue;}
+        #searchtext {display: block; margin: auto;}
+        #search-buttons {flex-direction:row; display:grid; grid-template-columns: 2fr 1fr 1fr 2fr;}
+        .grey-background {background-color: #e5e5e5; padding: 5 5 5 5; align-self: flex-end; font: black; font-family: arial, sans-serif; font-size: small;}
+        .buttons {padding:2px; margin:5px;}
+        .bottom-links {width:stretch; max-height: auto; display: flex; position:sticky; flex-direction: row; margin:auto; justify-content:space-evenly; border-top-width: 1px; border-top-color:rgb(37, 36, 36); font-family: "Noto Sans JP"; text-decoration-line: none;}
+    </style>
+</head>
+<body>
+<header>
+  <div id=top-bar>
+    <a href=#><p>About</p></a>
+    <a href=#><p>Store</p></a>
+    <p> </p>
+    <a href=#><p>Gmail</p></a>
+    <a href=#><p>Images</p></a>
+    <a href=#><button id="sign-in" type="submit">Sign In</button></a>
+  </div>  
+</header>
+<main>
+    <div>
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="the google logo" id="googlelogo"></img>
+    </div>
+    <div id="searcharea">
+        <div>
+        <form>
+            <input type="text" id="searchtext" name="searchtext"
+        required
+        minlength="4" maxlength="10000" max-size="350px">
+            <div id=search-buttons>    
+                <p></p>
+                <button class="buttons" type="submit">Google search</button>
+                <button class="buttons" type="submit">I'm Feeling Lucky</button>
+                <p></p>
+            </div>
+        </form>
+        </div>
+        
+    
+</main>
+
+<footer>
+</div>
+<div class="grey-background" height="25">
+    <div class="bottom-links">
+        <p>Environmentally friendly!</p>
+    </div>
+    <div class="bottom-links">
+        <a href=#><p>Legal</p></a> 
+        <a href=#><p>Possibly illegal</p></a> 
+        <a href=#><p>A.N.Other Link</p></a>
+    </div>
+</div>
+</footer>
+
+</body>
+</html>
